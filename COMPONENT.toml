@@ -3,7 +3,7 @@ name = "SigmaOS-archlinux-fail2ban"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "archlinux-fail2ban component"
+description = "SigmaOS component repository"
 upstream = []
 
 [contract]
