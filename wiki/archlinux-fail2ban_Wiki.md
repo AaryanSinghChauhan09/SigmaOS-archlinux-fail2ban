@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-archlinux-fail2ban Component Wiki
+# SigmaOS-archlinux-fail2ban Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-archlinux-fail2ban provides SigmaOS component repository for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-archlinux-fail2ban provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-archlinux-fail2ban Abstraction
-- Fail-Fast on SigmaOS-archlinux-fail2ban Initialization Errors
-- Deterministic SigmaOS-archlinux-fail2ban Setup
-- Clear Abstraction Over SigmaOS-archlinux-fail2ban APIs
-- Composition over Inheritance for SigmaOS-archlinux-fail2ban extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-archlinux-fail2ban Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-archlinux-fail2ban Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-archlinux-fail2ban Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-archlinux-fail2ban APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-archlinux-fail2ban extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-archlinux-fail2ban follows a SigmaOS-archlinux-fail2ban pattern:
+SigmaOS-archlinux-fail2ban follows a SigmaOS-archlinux-fail2ban pattern:
 - **SigmaOS-archlinux-fail2ban Core**: Provides SigmaOS-archlinux-fail2ban support, SigmaOS-archlinux-fail2ban management, and SigmaOS-archlinux-fail2ban tracking
 - **Management**: Supports SigmaOS-archlinux-fail2ban management, SigmaOS-archlinux-fail2ban configuration, and SigmaOS-archlinux-fail2ban lifecycle
 - **Tracking**: Supports SigmaOS-archlinux-fail2ban status, SigmaOS-archlinux-fail2ban tracking, and SigmaOS-archlinux-fail2ban lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-archlinux-fail2ban follows a SigmaOS-archlinux-fail2ban pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-archlinux-fail2ban by given configuration
--  - Register a SigmaOS-archlinux-fail2ban by given name
--  - Get SigmaOS-archlinux-fail2ban status and SigmaOS-archlinux-fail2ban availability
--  - Track SigmaOS-archlinux-fail2ban management and SigmaOS-archlinux-fail2ban tracking
+- Manage a SigmaOS-archlinux-fail2ban by given configuration
+- Register a SigmaOS-archlinux-fail2ban by given name
+- Get SigmaOS-archlinux-fail2ban status and SigmaOS-archlinux-fail2ban availability
+- Track SigmaOS-archlinux-fail2ban management and SigmaOS-archlinux-fail2ban tracking
 - Error types for SigmaOS-archlinux-fail2ban failure scenarios or unsupported SigmaOS-archlinux-fail2ban types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-archlinux-fail2ban init, SigmaOS-archlinux-fail2ban management)
 3. **Assert**: Verify the expected SigmaOS-archlinux-fail2ban results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-archlinux-fail2ban initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-archlinux-fail2ban failure scenarios
 - Unit tests provided for SigmaOS-archlinux-fail2ban management and configuration
